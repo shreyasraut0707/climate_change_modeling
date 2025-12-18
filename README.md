@@ -1,59 +1,62 @@
 # Climate Change Social Media Engagement Analysis
 
-A machine learning project analyzing climate change discussions on social media to predict engagement patterns and understand public sentiment.
+A machine learning project for my internship that analyzes climate change discussions on social media to predict engagement patterns.
 
-## 📊 Project Overview
+## Project Overview
 
-This project uses data science and machine learning techniques to:
-- Analyze climate change-related social media posts
-- Predict engagement metrics (likes, comments)
-- Extract insights about content characteristics that drive engagement
-- Build predictive models using text features and engagement patterns
+This project uses data science and machine learning to:
+- Analyze climate change social media posts
+- Predict engagement metrics like likes and comments
+- Understand what makes content engaging
+- Build predictive models using text features
 
-## 🚀 Features
+## Features
 
-- **Data Analysis**: Comprehensive exploratory data analysis of climate change social media data
-- **Text Feature Engineering**: Extract meaningful features from text content
-- **Machine Learning Models**: Multiple ML algorithms including:
+- Data Analysis: Exploratory analysis of climate change social media data
+- Text Feature Engineering: Extracting useful features from post text
+- Machine Learning Models: 
   - Linear Regression
   - Random Forest
   - Gradient Boosting
-  - Neural Networks (with hyperparameter tuning)
-- **Visualization**: Rich visualizations for data exploration and model evaluation
-- **Scenario Analysis**: Predict engagement for different content types
+  - Neural Networks
+- Visualizations for data exploration and model evaluation
+- Scenario analysis for different content types
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Climate_Change/
-│
-├── Climate_Change_Modeling.ipynb   # Main Jupyter notebook with full analysis
-├── climate_nasa (1).csv            # Dataset (social media posts)
-├── experiment_results_summary.csv  # Model performance results
-├── requirements.txt                # Python dependencies
-├── .gitignore                      # Git ignore file
-└── README.md                       # This file
+|
+|-- Climate_Change_Modeling.ipynb   # Main notebook with full analysis
+|-- climate_nasa (1).csv            # Dataset
+|-- experiment_results_summary.csv  # Model results
+|-- requirements.txt                # Dependencies
+|-- .gitignore
+|-- README.md
 ```
 
-## 🛠️ Installation
+## Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/shreyasraut0707/climate_change_modeling.git
 cd climate_change_modeling
 ```
 
 2. Install required packages:
+
 ```bash
 pip install -r requirements.txt
 ```
 
 3. Launch Jupyter Notebook:
+
 ```bash
 jupyter notebook Climate_Change_Modeling.ipynb
 ```
 
-## 📦 Requirements
+## Requirements
 
 - Python 3.8+
 - pandas
@@ -63,70 +66,60 @@ jupyter notebook Climate_Change_Modeling.ipynb
 - seaborn
 - jupyter
 
-See `requirements.txt` for complete list with versions.
+See requirements.txt for the complete list.
 
-## 🔍 Dataset
+## Dataset
 
-The dataset contains social media posts related to climate change with the following features:
-- **date**: Post timestamp
-- **likesCount**: Number of likes received
-- **profileName**: User profile identifier
-- **commentsCount**: Number of comments
-- **text**: Post content
+The dataset contains social media posts about climate change with these columns:
 
-## 📈 Model Performance
+- date: When the post was made
+- likesCount: Number of likes
+- profileName: User identifier
+- commentsCount: Number of comments
+- text: The actual post content
 
-Best performing model: **Random Forest**
+## Model Performance
+
+Best model was Random Forest:
+
 - MAE: 6.23 likes
 - RMSE: 13.25 likes
-- R² Score: 0.269
+- R2 Score: 0.269
 
-### Key Insights:
+Key findings:
 - Text length is the most important predictor (36% importance)
 - Comment count strongly correlates with engagement (32% importance)
-- Longer, more detailed posts generate higher engagement
-- Viral discussions (50+ comments) can generate 20+ likes
+- Longer posts get more engagement
+- Posts with 50+ comments can get 20+ likes
 
-## 🎯 Usage
+## Usage
 
-Open the Jupyter notebook and run cells sequentially:
+Open the Jupyter notebook and run all cells:
 
 ```python
-# The notebook includes:
-# 1. Data loading and exploration
+# The notebook covers:
+# 1. Data loading
 # 2. Feature engineering
-# 3. Model training and evaluation
-# 4. Scenario-based predictions
-# 5. Results visualization
+# 3. Model training
+# 4. Predictions
+# 5. Results
 ```
 
-## 📊 Results
+## Results
 
-The analysis reveals:
-1. **Content Length Matters**: Longer posts (400+ characters) get significantly more engagement
-2. **Discussion Activity**: Posts with active comment sections see 10x more likes
-3. **Sentiment Impact**: Positive sentiment words contribute to higher engagement
-4. **Predictability**: Engagement can be predicted with ~27% accuracy using basic features
+What I found:
 
-## 🤝 Contributing
+1. Content Length Matters - Longer posts (400+ characters) get more engagement
+2. Discussion Activity - Posts with active comments see way more likes
+3. Sentiment - Positive words help with engagement
+4. Predictability - About 27% accuracy with basic features
 
-Contributions, issues, and feature requests are welcome!
+## Author
 
-## 👨‍💻 Author
+Shreyas Raut
 
-**Shreyas Raut**
-- GitHub: [@shreyasraut0707](https://github.com/shreyasraut0707)
+GitHub: [@shreyasraut0707](https://github.com/shreyasraut0707)
 
-## 📝 License
+## License
 
-This project is open source and available under the MIT License.
-
-## 🙏 Acknowledgments
-
-- NASA climate data sources
-- Open source data science community
-- Social media platforms for public data access
-
----
-
-⭐ If you find this project useful, please consider giving it a star!
+MIT License
